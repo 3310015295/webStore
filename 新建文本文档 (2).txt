@@ -1,57 +1,55 @@
-linux £ºÓÃ»§Ãû ¶¼Îªroot ÃÜÂë 123456
+linux ï¼šç”¨æˆ·å éƒ½ä¸ºroot å¯†ç  123456
 
-centos1 £ºÒÑ°²×°Èí¼ş mysql jdk eclipse tomcat redis 
-         redis ÅäÖÃÎÄ¼ş 3 ¸ö  Î»ÖÃ /myredis
-	 keepalive /usr/local ¸ºÔØ¾ùºâÖ÷»ú
-	 zookeeper  /usr/local/zookeeper   ÈÕÖ¾¡¢Êı¾İÎÄ¼ş´æ·Å /home/hadoop/zookeeper
+centos1 ï¼šå·²å®‰è£…è½¯ä»¶ mysql jdk eclipse tomcat redis 
+         redis é…ç½®æ–‡ä»¶ 3 ä¸ª  ä½ç½® /myredis
+	 keepalive /usr/local è´Ÿè½½å‡è¡¡ä¸»æœº
+	 zookeeper  /usr/local/zookeeper   æ—¥å¿—ã€æ•°æ®æ–‡ä»¶å­˜æ”¾ /home/hadoop/zookeeper
          hive 
 	 hadoop /home/hadoop
     	 hadoop /home/flume
 
 
-centos2£º /usr/local/cluster ÏÂÃæÅäÖÃÈı¸ö redis.conf ÎÄ¼ş redis6379.conf£¨slave£© redis6380.conf £¨master£©redis6371.conf£¨slave£©
-	  /usr/local/redis-3.0.4   redis-3.0.4¼¯Èº¹ÜÀí¹¤¾ß
+centos2ï¼š /usr/local/cluster ä¸‹é¢é…ç½®ä¸‰ä¸ª redis.conf æ–‡ä»¶ redis6379.confï¼ˆslaveï¼‰ redis6380.conf ï¼ˆmasterï¼‰redis6371.confï¼ˆslaveï¼‰
+	  /usr/local/redis-3.0.4   redis-3.0.4é›†ç¾¤ç®¡ç†å·¥å…·
 ./redis-trib.rb create --replicas 192.168.229.130:6379 192.168.229.130:6380 192.168.229.130:6381 192.168.229.129:6382 192.168.229.129:6383 192.168.229.129:6384
 	  mysql 
-	  service realserver start ÅäÖÃĞéÄâ¶Ë¿ÚºÅ
+	  service realserver start é…ç½®è™šæ‹Ÿç«¯å£å·
 	  jdk   /usr/local
-	  zookeeper  /usr/local/zookeeper   ÈÕÖ¾¡¢Êı¾İÎÄ¼ş´æ·Å /home/hadoop/zookeeper
+	  zookeeper  /usr/local/zookeeper   æ—¥å¿—ã€æ•°æ®æ–‡ä»¶å­˜æ”¾ /home/hadoop/zookeeper
           hadoop /home/hadoop
           strom /export/servers
-	  apache-tomcat-7.0.47  /root ²¿ÊğÁËdubbo·şÎñ
+	  apache-tomcat-7.0.47  /root éƒ¨ç½²äº†dubboæœåŠ¡
           tomcat /usr/local
 	  
 
 
-centos3£º /usr/local/cluster ÏÂÃæÅäÖÃÈı¸ö redis.conf ÎÄ¼ş redis6384.conf£¨master£©  redis6383.conf £¨master£©redis6382.conf
-	  keepalive ¸ºÔØ¾ùºâ±¸»ú
+centos3ï¼š /usr/local/cluster ä¸‹é¢é…ç½®ä¸‰ä¸ª redis.conf æ–‡ä»¶ redis6384.confï¼ˆmasterï¼‰  redis6383.conf ï¼ˆmasterï¼‰redis6382.conf
+	  keepalive è´Ÿè½½å‡è¡¡å¤‡æœº
 	  mysql
-	  ftpÍ¼Æ¬ÉÏ´« /home/ftp
+	  ftpå›¾ç‰‡ä¸Šä¼  /home/ftp
 	  nginx  /usr/local
 	  jdk   /usr/local
-	  zookeeper  /usr/local/zookeeper   ÈÕÖ¾¡¢Êı¾İÎÄ¼ş´æ·Å /home/hadoop/zookeeper
+	  zookeeper  /usr/local/zookeeper   æ—¥å¿—ã€æ•°æ®æ–‡ä»¶å­˜æ”¾ /home/hadoop/zookeeper
           hadoop /home/hadoop
 	  hive /home/hive
           sqoop  /home/sqoop
           flume /home/flume
 	  strom /export/servers
 	  python2.7 /usr/local
-            tomcat /usr/local  /usr/local/tomcat/webappspwd°²×°ºÃÁËsolr³ÌĞò
+            tomcat /usr/local  /usr/local/tomcat/webappspwdå®‰è£…å¥½äº†solrç¨‹åº
 	    solr /usr/local
-	    sorl¼¯Èº
+	    sorlé›†ç¾¤
 		/solr/local/solr-cloud
-		/usr/local tomcat1 ¡¢tomcat2¡¢tomcat3¡¢tomcat4
+		/usr/local tomcat1 ã€tomcat2ã€tomcat3ã€tomcat4
 
         
 	    
 -------------------
-github ÕËºÅ   [user]
-	name = neteye
-	email = 908635882@qq.com
 
 
 
 
-centos4£ºmysql
-        //usr/local/tomcat-deploy/  ÈÈ²¿ÊğÏîÄ¿µÄ¶à¸ötomcat
-        service realserver start ÅäÖÃĞéÄâ¶Ë¿ÚºÅ
+
+centos4ï¼šmysql
+        //usr/local/tomcat-deploy/  çƒ­éƒ¨ç½²é¡¹ç›®çš„å¤šä¸ªtomcat
+        service realserver start é…ç½®è™šæ‹Ÿç«¯å£å·
